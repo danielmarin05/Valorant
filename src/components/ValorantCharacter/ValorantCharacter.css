@@ -1,0 +1,11 @@
+.peopleCard {
+    align-items: center;
+    background-color: burlywood;
+    border: 1px solid white !important;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    min-width: 200px;
+}
