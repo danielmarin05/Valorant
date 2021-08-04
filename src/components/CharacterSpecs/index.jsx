@@ -7,8 +7,9 @@ class CharacterSpecs extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            charactersInfo: [],
-            uuid: props.match.params
+            charactersInfo: {},
+            abilities: [],
+            uuid: props.match.params.uuid
         }
     }
     
@@ -19,8 +20,9 @@ class CharacterSpecs extends Component{
         fetch(`${valorantUrl}${this.state.uuid}`)
             .then(response => response.json())
             .then(json => {
-                const agent = (json && json.data) || [];
+                const agent = (json && json.data) || {};
                 this.setState({ charactersInfo: agent});
+                this.setState({ abilities: agent.abilities});
                 console.log('TEST', this.state.uuid)
             });
     }
@@ -31,11 +33,14 @@ class CharacterSpecs extends Component{
           <section>
           {console.log('This STATE',this.state.charactersInfo)}
             {
-              this.state.charactersInfo && this.state.charactersInfo.map((params, index) => {
-                return (    
-                    <span>name:{params.name}</span>
-                );
-             })
+              //this.state.charactersInfo && this.state.charactersInfo.map((params, index) => {
+               // return (    
+                    <span>{this.state.charactersInfo.displayName}</span>,
+                    <span>
+                        {this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} 
+                    </span> 
+                //);
+             //})
             }
           </section>
         </div>
