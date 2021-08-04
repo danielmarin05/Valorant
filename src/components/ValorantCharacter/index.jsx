@@ -5,13 +5,16 @@ import {Link} from 'react-router-dom';
 
 
 class ValorantCharacter extends Component{
-
+    
     render(){
+        //const { uuid } = props.match.params;
         const nameArray = this.props && this.props.name;
         console.log('Test:  ', nameArray);
         return(
             <div>
-                <Link to='/charactersinfo'>{nameArray}</Link>
+                <ul>
+                    <li><Link to= {`/charactersinfo/${this.props.uuid}`}> {this.props.name} </Link></li>
+                </ul> 
             </div>
             
         );

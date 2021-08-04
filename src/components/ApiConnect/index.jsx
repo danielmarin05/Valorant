@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CharacterSpecs from '../CharacterSpecs';
+
 import ValorantCharacter from '../ValorantCharacter';
 import './ApiConnect.css';
 
@@ -18,7 +18,7 @@ class ApiConnect extends Component {
             .then(response => response.json())
             .then(json => {
                 console.log('@Json',  json)
-                const agents = json && json.data || [];
+                const agents = (json && json.data) || [];
                 console.log('@Variable Results', agents);
                 this.setState({ valorantCharacters: agents});
             });
@@ -30,7 +30,6 @@ class ApiConnect extends Component {
           <section>
           {console.log('This STATE',this.state.valorantCharacters)}
             {
-              
               this.state.valorantCharacters && this.state.valorantCharacters.map((params, index) => {
                 return (    
                   <ValorantCharacter 
