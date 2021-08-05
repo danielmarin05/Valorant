@@ -44,7 +44,7 @@ class CharacterSpecs extends Component{
             </section>
             <article className='article' >
                 <h2 className='descriptionTitle'>abilities</h2>
-                <ul>
+                <ul className='descriptionList'>
                     { 
                         this.state.abilities.map((params, index)=> <li className='charListed' key={index}>{params.displayName}</li>)
                     }
