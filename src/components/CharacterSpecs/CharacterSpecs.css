@@ -1,12 +1,14 @@
 .divcharSpecs{
     background: radial-gradient(#FD445C, #6C172D);
+    width: 100%;
+    height: 100vh;
 }
 
 .sectioncharSpecs{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    max-height: 80%;
 }
 
 .nameTitle{
@@ -16,12 +18,13 @@
     color: #EBEAE1;
     justify-content: center;
     margin-top: 40px;
+
 }
 
 .charImage{
     display: flex;
     max-width: 40%;
-    height: 80%;
+    max-height: 80%;
     position: absolute;
     top: 120px;
 }
@@ -30,10 +33,10 @@
     width: 250px;
     height: 200px;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: flex-start;
     left: 900px;
-    top: 190px;
+    top: 50px;
     font-family: 'VALORANT', sans-serif;
     flex-direction: column;
     font-size: 28px;
@@ -53,8 +56,8 @@
 
 .aside{
     display: flex;
-    width: 250px;
-    height: 200px;
+    max-width: 20%;
+    max-height: 60%;
     flex-wrap: wrap;
     text-transform: capitalize;
     position: absolute;
@@ -82,5 +85,5 @@
     position: absolute;
     font-family: 'VALORANT', sans-serif;
     bottom: 40px;
-    left: 1300px
+    left: 1300px;
 }
