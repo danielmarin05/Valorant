@@ -46,7 +46,7 @@ class CharacterSpecs extends Component{
                 }
             </p>  
           </section>
-          <div><Link to="/">To do List </Link></div>
+          <div className='goBack'><Link to="/" className='linkColor'>Back </Link></div>
         </div>
             
         );
