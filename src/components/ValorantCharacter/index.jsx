@@ -11,12 +11,11 @@ class ValorantCharacter extends Component{
         const nameArray = this.props && this.props.name;
         console.log('Test:  ', nameArray);
         return(
-            <div>
+            <section className='charsection'>
                 <ul>
-                    <li><Link to= {`/charactersinfo/${this.props.uuid}`}> {this.props.name} </Link></li>
-                </ul> 
-            </div>
-            
+                    <li className='charList'><Link to= {`/charactersinfo/${this.props.uuid}`} className='linkColor'> {this.props.name} </Link></li>
+                </ul>
+            </section>
         );
     }
 }

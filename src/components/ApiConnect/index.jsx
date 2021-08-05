@@ -27,7 +27,8 @@ class ApiConnect extends Component {
     render() {
       return (
         <div>
-          <section>
+          <section className='charBackground'>
+          <div className='organize'>
           {console.log('This STATE',this.state.valorantCharacters)}
             {
               this.state.valorantCharacters && this.state.valorantCharacters.map((params, index) => {
@@ -41,6 +42,7 @@ class ApiConnect extends Component {
                 );
              })
             }
+            </div>
           </section>
         </div>
       );

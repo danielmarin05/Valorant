@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './CharacterSpecs.css';
 const valorantUrl = 'https://valorant-api.com/v1/agents/';
  
 class CharacterSpecs extends Component{
@@ -30,18 +30,15 @@ class CharacterSpecs extends Component{
     render(){
         return(
         <div>
-          <section>
-          {console.log('This STATE',this.state.charactersInfo)}
-            {
-              //this.state.charactersInfo && this.state.charactersInfo.map((params, index) => {
-               // return (    
-                    <span>{this.state.charactersInfo.displayName}</span>,
-                    <span>
-                        {this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} 
-                    </span> 
-                //);
-             //})
-            }
+          <section className='sectioncharSpecs'>
+            {console.log('This STATE',this.state.charactersInfo)}
+            <span className='nameTitle'>{this.state.charactersInfo.displayName}</span>
+            <img src={this.state.charactersInfo.fullPortrait} alt='Character image'/>
+                { 
+                    <ul>
+                        <li>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
+                    </ul> 
+                }
           </section>
         </div>
             

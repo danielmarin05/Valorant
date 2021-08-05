@@ -1,0 +1,11 @@
+.sectioncharSpecs{
+    background: radial-gradient(#FD445C, #6C172D);
+}
+
+.nameTitle{
+    display: flex; 
+    font-family: 'VALORANT', sans-serif;
+    font-size: 30px;
+    color: #EBEAE1;
+    
+}

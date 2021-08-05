@@ -1,11 +1,16 @@
-.peopleCard {
-    align-items: center;
-    background-color: burlywood;
-    border: 1px solid white !important;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    justify-content: center;
-    min-width: 200px;
+.charsection{
+    display:flex;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.charList{
+    list-style: none;
+    font-family: 'VALORANT', sans-serif;
+    font-size: 30px;
+    color: #EBEAE1;
+}
+
+.linkColor{
+    color: #EBEAE1;
 }
