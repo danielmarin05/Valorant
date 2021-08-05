@@ -38,6 +38,7 @@ class ApiConnect extends Component {
                     description={params.description}
                     developerName={params.developerName}
                     uuid={params.uuid}
+                    icon={params.displayIconSmall}
                     key={index} /> 
                 );
              })

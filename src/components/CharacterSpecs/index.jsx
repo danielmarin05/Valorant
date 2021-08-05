@@ -33,12 +33,18 @@ class CharacterSpecs extends Component{
           <section className='sectioncharSpecs'>
             {console.log('This STATE',this.state.charactersInfo)}
             <span className='nameTitle'>{this.state.charactersInfo.displayName}</span>
-            <img src={this.state.charactersInfo.fullPortrait} alt='Character image'/>
+            <img className='charImage' src={this.state.charactersInfo.fullPortrait} alt='Character image'/>
+            <aside className='aside'>description
+                <p className='paragraph'>{this.state.charactersInfo.description}</p>
+            </aside>
+            <p className='article'>abilities
                 { 
-                    <ul>
-                        <li>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
+                    <ul className='charUlist'>
+                        <li className='charListed'>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
                     </ul> 
                 }
+            </p>
+
           </section>
         </div>
             

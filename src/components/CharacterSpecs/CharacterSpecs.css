@@ -1,11 +1,71 @@
 .sectioncharSpecs{
     background: radial-gradient(#FD445C, #6C172D);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }
 
 .nameTitle{
     display: flex; 
     font-family: 'VALORANT', sans-serif;
-    font-size: 30px;
+    font-size: 90px;
     color: #EBEAE1;
-    
+    justify-content: center;
+    margin-top: 40px;
 }
+
+.charImage{
+    display: flex;
+    max-width: 40%;
+    height: 80%;
+    position: absolute;
+    top: 120px;
+}
+
+.article{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    left: 900px;
+    top: 190px;
+    font-family: 'VALORANT', sans-serif;
+    flex-direction: column;
+    font-size: 28px;
+    color: #EBEAE1;
+}
+
+.charListed{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    font-family: 'VALORANT', sans-serif;
+    font-size: 20px;
+    color: #EBEAE1;
+    bottom: 40px;
+}
+
+.aside{
+    display: flex;
+    width: 250px;
+    height: 200px;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    position: absolute;
+    top: 190px;
+    left: 500px;
+    font-family: 'VALORANT', sans-serif;
+    font-size: 28px;
+    color: #EBEAE1;
+}
+
+.paragraph{
+    font-family: 'VALORANT', sans-serif;
+    font-size: 20px;
+    color: #EBEAE1;
+    margin-top: 20px;
+}
+
