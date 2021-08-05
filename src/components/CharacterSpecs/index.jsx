@@ -30,15 +30,15 @@ class CharacterSpecs extends Component{
 
     render(){
         return(
-        <div className='divcharSpecs'>
+        <main className='divcharSpecs'>
           <section className='sectioncharSpecs'>
             {console.log('This STATE',this.state.charactersInfo)}
-            <span className='nameTitle'>{this.state.charactersInfo.displayName}</span>
-            <img className='charImage' src={this.state.charactersInfo.fullPortrait} alt='Character image'/>
-            <aside className='aside'>description
+            <span className='nameTitle' alt='character name as title'>{this.state.charactersInfo.displayName}</span>
+            <img className='charImage' src={this.state.charactersInfo.fullPortrait} alt='character image'/>
+            <aside className='aside' alt='short description about character role'>description
                 <p className='paragraph'>{this.state.charactersInfo.description}</p>
             </aside>
-            <p className='article'>abilities
+            <p className='article' alt='name every abilitie of the character'>abilities
                 { 
                     <ul>
                         <li className='charListed'>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
@@ -46,8 +46,8 @@ class CharacterSpecs extends Component{
                 }
             </p>  
           </section>
-          <div className='goBack'><Link to="/characters" className='linkColor'>Back </Link></div>
-        </div>
+          <div className='goBack' alt='back link'><Link to="/characters" className='linkColor'>Back </Link></div>
+        </main>
             
         );
     }

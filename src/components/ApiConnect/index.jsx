@@ -26,10 +26,10 @@ class ApiConnect extends Component {
 
     render() {
       return (
-        <div>
+        <main>
           <section className='charBackground'>
           <div className='organize'>
-          {console.log('This STATE',this.state.valorantCharacters)}
+            {console.log('This STATE',this.state.valorantCharacters)}
             {
               this.state.valorantCharacters && this.state.valorantCharacters.map((params, index) => {
                 return (    
@@ -45,8 +45,8 @@ class ApiConnect extends Component {
             }
             </div>
           </section>
-          <div className='goBack'><Link to="/" className='linkColor'>Back </Link></div>
-        </div>
+          <div className='goBack' alt='back link'><Link to="/" className='linkColor'>Back </Link></div>
+        </main>
         
       );
     }

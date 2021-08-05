@@ -12,7 +12,7 @@ class Welcome extends Component{
                 <section>
                     <ul>
                         <li className='charList'>
-                            <Link to='characters' className='linkColor'>Characters </Link>
+                            <Link to='characters' className='linkColor' alt='charaters link to list'>Characters </Link>
                         </li>
 
                     </ul>
