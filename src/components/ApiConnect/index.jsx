@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom';
 import ValorantCharacter from '../ValorantCharacter';
 import './ApiConnect.css';
 
@@ -45,7 +45,7 @@ class ApiConnect extends Component {
             }
             </div>
           </section>
-          
+          <div className='goBack'><Link to="/" className='linkColor'>Back </Link></div>
         </div>
         
       );
