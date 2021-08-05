@@ -1,6 +1,6 @@
 .main{
     display: flex;
-    background: radial-gradient(#FD445C, #6C172D);
+    background: radial-gradient(#dd3249, #6C172D);
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -15,7 +15,7 @@
 .vTitle{
     font-family: 'VALORANT', sans-serif;
     font-size: 150px;
-    color: #EBEAE1;
+    color: #ffffff;
 }
 
 .charList{

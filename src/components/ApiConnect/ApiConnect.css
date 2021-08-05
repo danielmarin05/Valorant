@@ -1,19 +1,38 @@
-.charBackground{
+.appMain{
     display: flex;
-    background:radial-gradient(#FD445C, #6C172D);
+    flex-direction: column;
     width: 100%;
     height: 100vh;
+    background:radial-gradient(#dd3249, #6C172D);
+}
+
+.charBackground{
+    display: flex;
+
+    width: 100%;
+    height: 90%;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
+    /* justify-content: center; */
 }
 
 .organize{
     display: flex;
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.goBack1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 10%;
+}
+
+.backlink{
+    color: #EBEAE1;
+    font-family: 'VALORANT', sans-serif;
 }
