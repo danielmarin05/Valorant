@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom';
 class ValorantCharacter extends Component{
     
     render(){
-        //const { uuid } = props.match.params;
         const nameArray = this.props && this.props.name;
-        console.log('Test:  ', nameArray);
+        console.log('Test:  ', this.props.icon);
         return(
             <section className='charsection'>
-                <ul>
-                    <li className='charList' alt='character names list'><Link to= {`/charactersinfo/${this.props.uuid}`} className='linkColor'> {this.props.name} </Link></li>
-                </ul>
+                <caption className='varlorantcharCaption'>
+                    <img src={this.props.icon} alt={`champion ${this.props.name}`}/>
+                </caption>
+                <Link to= {`/charactersinfo/${this.props.uuid}`}  className='linkColor'> {this.props.name} </Link>
             </section>
             
         );

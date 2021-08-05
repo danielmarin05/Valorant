@@ -1,16 +1,30 @@
 .charsection{
     display:flex;
-    margin-top: 50px;
-    margin-left: 30px;
-}
-
-.charList{
-    list-style: none;
+    width: calc(100%/5);
+    height: calc(100%/4);
+    justify-content: center;
+    align-items: center;
     font-family: 'VALORANT', sans-serif;
+    flex-direction: column;
     font-size: 30px;
     color: #EBEAE1;
 }
 
+.varlorantcharCaption{
+    width: 70%;
+    height: 70%;
+}
+
+.varlorantcharCaption img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
 .linkColor{
     color: #EBEAE1;
+    width: 100%;
+    height: 10%;
+    text-align: center;
 }

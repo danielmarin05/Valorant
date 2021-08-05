@@ -13,7 +13,7 @@
     display: flex;
     width: 80%;
     height: 80vh;
-    align-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    flex-flow: column wrap;
+    justify-content: center;
 }
