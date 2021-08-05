@@ -1,14 +1,9 @@
 .divcharSpecs{
     background: radial-gradient(#FD445C, #6C172D);
     width: 100%;
-    height: 100vh;
-}
-
-.sectioncharSpecs{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    max-height: 80%;
+    flex-wrap: wrap;
 }
 
 .nameTitle{
@@ -17,55 +12,70 @@
     font-size: 90px;
     color: #EBEAE1;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 10%;
+}
 
+.caption{
+    max-width: 550px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
 }
 
 .charImage{
-    display: flex;
-    max-width: 40%;
-    max-height: 80%;
-    position: absolute;
-    top: 120px;
+    width: 100%;
+    height: 100%;
 }
 
-.article{
-    width: 250px;
-    height: 200px;
+
+.descriptionTitle{
+    width: 100%;
+}
+
+.descriptionContainer{
     display: flex;
-    position: relative;
-    justify-content: flex-start;
-    left: 900px;
-    top: 50px;
-    font-family: 'VALORANT', sans-serif;
+    max-width: 300px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    font-size: 28px;
+    font-family: 'VALORANT', sans-serif;
     color: #EBEAE1;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+}
+
+.articleTitle{
+        display: flex;
+        max-width: 300px;
+        text-transform: capitalize;
+}
+.article{
+    display: flex;
+    max-width: 300px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'VALORANT', sans-serif;
+    color: #EBEAE1;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 10px;
 }
 
 .charListed{
     display: flex;
     flex-direction: column;
-    position: absolute;
     list-style: none;
     font-family: 'VALORANT', sans-serif;
     font-size: 20px;
     color: #EBEAE1;
-    bottom: 30px;
-}
-
-.aside{
-    display: flex;
-    max-width: 20%;
-    max-height: 60%;
-    flex-wrap: wrap;
-    text-transform: capitalize;
-    position: absolute;
-    top: 190px;
-    left: 500px;
-    font-family: 'VALORANT', sans-serif;
-    font-size: 28px;
-    color: #EBEAE1;
+    margin-top: 20px;
 }
 
 .paragraph{

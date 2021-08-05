@@ -31,21 +31,25 @@ class CharacterSpecs extends Component{
     render(){
         return(
         <main className='divcharSpecs'>
-          <section className='sectioncharSpecs'>
             {console.log('This STATE',this.state.charactersInfo)}
-            <span className='nameTitle' alt='character name as title'>{this.state.charactersInfo.displayName}</span>
-            <img className='charImage' src={this.state.charactersInfo.fullPortrait} alt='character image'/>
-            <aside className='aside' alt='short description about character role'>description
+            <section className='nameTitle'>
+                <h1>{this.state.charactersInfo.displayName}</h1>
+            </section>
+            <caption className='caption'>
+                <img className='charImage' src={this.state.charactersInfo.fullPortrait} alt='character image'/>
+            </caption>
+            <section className='descriptionContainer'>
+                <h2 className='descriptionTitle'>description</h2>
                 <p className='paragraph'>{this.state.charactersInfo.description}</p>
-            </aside>
-            <p className='article' alt='name every abilitie of the character'>abilities
-                { 
-                    <ul>
-                        <li className='charListed'>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
-                    </ul> 
-                }
-            </p>  
-          </section>
+            </section>
+            <article className='article' >
+                <h2 className='descriptionTitle'>abilities</h2>
+                <ul>
+                    { 
+                        this.state.abilities.map((params, index)=> <li className='charListed' key={index}>{params.displayName}</li>)
+                    }
+                </ul>  
+            </article>
           <div className='goBack' alt='back link'><Link to="/characters" className='linkColor'>Back </Link></div>
         </main>
             
