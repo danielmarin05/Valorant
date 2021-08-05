@@ -5,6 +5,7 @@ import Welcome from '../Welcome/index'
 
 import ApiConnect from "../ApiConnect";
 import CharacterSpecs from "../CharacterSpecs";
+import ValorantCharacter from "../ValorantCharacter";
 
 function App() {
   return (

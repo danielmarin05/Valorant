@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './CharacterSpecs.css';
 const valorantUrl = 'https://valorant-api.com/v1/agents/';
  
@@ -29,7 +30,7 @@ class CharacterSpecs extends Component{
 
     render(){
         return(
-        <div>
+        <div className='divcharSpecs'>
           <section className='sectioncharSpecs'>
             {console.log('This STATE',this.state.charactersInfo)}
             <span className='nameTitle'>{this.state.charactersInfo.displayName}</span>
@@ -39,13 +40,13 @@ class CharacterSpecs extends Component{
             </aside>
             <p className='article'>abilities
                 { 
-                    <ul className='charUlist'>
+                    <ul>
                         <li className='charListed'>{this.state.abilities.map((params, index)=> <span key={index}>{params.displayName}</span>)} </li> 
                     </ul> 
                 }
-            </p>
-
+            </p>  
           </section>
+          <div><Link to="/">To do List </Link></div>
         </div>
             
         );

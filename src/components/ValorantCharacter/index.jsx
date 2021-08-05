@@ -16,6 +16,7 @@ class ValorantCharacter extends Component{
                     <li className='charList'><Link to= {`/charactersinfo/${this.props.uuid}`} className='linkColor'> {this.props.name} </Link></li>
                 </ul>
             </section>
+            
         );
     }
 }

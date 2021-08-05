@@ -1,5 +1,8 @@
-.sectioncharSpecs{
+.divcharSpecs{
     background: radial-gradient(#FD445C, #6C172D);
+}
+
+.sectioncharSpecs{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -69,3 +72,15 @@
     margin-top: 20px;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.goBack{
+    display: flex;
+    position: absolute;
+    font-family: 'VALORANT', sans-serif;
+    bottom: 40px;
+    left: 1300px
+}
