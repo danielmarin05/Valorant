@@ -6,7 +6,6 @@ class ValorantCharacter extends Component{
     
     render(){
         const nameArray = this.props && this.props.name;
-        console.log('Test:  ', this.props.icon);
         return(
             <section className='charsection'>
                 <caption className='varlorantcharCaption'>

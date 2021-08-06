@@ -17,9 +17,7 @@ class ApiConnect extends Component {
         fetch(valorantUrl)
             .then(response => response.json())
             .then(json => {
-                console.log('@Json',  json)
                 const agents = (json && json.data) || [];
-                console.log('@Variable Results', agents);
                 this.setState({ valorantCharacters: agents});
             });
     }
@@ -29,7 +27,6 @@ class ApiConnect extends Component {
         <main className='appMain'>
           <section className='charBackground'>
             <div className='organize'>
-            {console.log('This STATE',this.state.valorantCharacters)}
             {
               this.state.valorantCharacters && this.state.valorantCharacters.map((params, index) => {
                 return (    

@@ -2,10 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Welcome from '../Welcome/index'
-
 import ApiConnect from "../ApiConnect";
 import CharacterSpecs from "../CharacterSpecs";
-import ValorantCharacter from "../ValorantCharacter";
 
 function App() {
   return (
